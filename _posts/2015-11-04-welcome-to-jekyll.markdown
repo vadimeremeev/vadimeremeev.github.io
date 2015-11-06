@@ -1,7 +1,10 @@
 ---
 layout: post
-title:  "Welcome to my blog"
+title:  "Untypical guide to Ruby"
 date:   2015-11-04 15:58:12 +0800
 categories: jekyll update
 ---
 
+Found pretty much interesting and untypical guide to Ruby. 
+
+http://poignant.guide/book/
