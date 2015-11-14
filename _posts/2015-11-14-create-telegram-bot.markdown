@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Create telegam bot with Rails hoster on Heroku part 1."
+title:  "Create telegam bot app on Ruby on Rails hosted on Heroku. Part 1."
 date:   2015-11-14 15:58:12 +0800
 categories: heroku, telegram botapi, rails
 ---
