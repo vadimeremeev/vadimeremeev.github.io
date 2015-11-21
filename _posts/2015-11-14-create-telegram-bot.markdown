@@ -21,7 +21,7 @@ git push origin master
 
 rails new .
 
-3. Lets create new app in heroku. Heroku allow you to create free apps which can run within one process. It's more than enought for first version before bring it to production. I highly recomment use CLI provided by Heroku where you can manage all your apps.
+3. Lets create new app in heroku. Heroku allow you to create free apps which can run within one process. It's more than enought for first version before bring it to production. I highly recomment use CLI provided by Heroku where you can manage all your apps (they call it Heroku toolbelt).
 
 heroku apps:create motivatedquoteoftheday
 
