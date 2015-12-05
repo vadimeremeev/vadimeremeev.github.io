@@ -7,4 +7,6 @@ categories: books
 
 Found pretty much interesting and untypical guide to Ruby. 
 
-http://poignant.guide/book/
+![Alt cover](http://poignant.guide/images/2006.cover.jpg)
+
+[poignant.guide/book/](http://poignant.guide/book/ "book")

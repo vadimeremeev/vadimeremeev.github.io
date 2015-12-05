@@ -1,19 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My personal blog</title>
+    <title>Personal blog</title>
     <description></description>
     <link>http://vadimeremeev.github.io/</link>
     <atom:link href="http://vadimeremeev.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Nov 2015 17:41:50 +0800</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2015 17:41:50 +0800</lastBuildDate>
+    <pubDate>Sat, 05 Dec 2015 20:26:17 +0800</pubDate>
+    <lastBuildDate>Sat, 05 Dec 2015 20:26:17 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Create Telegam bot. Part 3.</title>
+        <description>&lt;h1 id=&quot;this-is-h1&quot;&gt;This is H1&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;this-is-h2&quot;&gt;This is H2&lt;/h2&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Test
+Test&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;List of the data&lt;/em&gt;
+        &lt;code&gt;here is the code&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Dec 2015 15:58:12 +0800</pubDate>
+        <link>http://vadimeremeev.github.io/heroku,/telegram/botapi,/rails/2015/12/05/create-telegram-bot-part3.html</link>
+        <guid isPermaLink="true">http://vadimeremeev.github.io/heroku,/telegram/botapi,/rails/2015/12/05/create-telegram-bot-part3.html</guid>
+        
+        
+        <category>heroku,</category>
+        
+        <category>telegram</category>
+        
+        <category>botapi,</category>
+        
+        <category>rails</category>
+        
+      </item>
+    
+      <item>
+        <title>Create Telegam Bot. Part 2.</title>
+        <description>&lt;p&gt;In this post we will create new Telegram bot and link it with our awesome heroku app.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ask BotFather to create new bot.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; https://core.telegram.org/bots
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;There are two possibility to catch the messages from the bot within your app. First is by incoming callback function. And second constantly asking bot if there are new messages and if there are catch it. We will go for first option which is more flexible for us.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; https://core.telegram.org/bots/api#setwebhook
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Before that lets create tune rails app a bit by adding postgres DB which will have all our quotes, models, controller and library to work with Telegram&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;First lets create an ability to receive incoming requests from our beautiful bot. For this we need to define new method in our controller and link it with the url path which better make very unpredictable. To make sure that no other applications can send there data. Lets call it incomingdatafromtelegram9573. Then we need to register our callback in our bot by sending post request with the authorisation token and the url itself. Before that let’s deploy our code with ability to see the incoming requests in the logs.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Heroku provides perfect logging system which allows to see different kind of logs in the same place. Just type heroku logs -t. To enable rails logs be part of it we need to do install gem rails_12factor which allows output logs into stdout to catch it later by heroku logging system. Also we need to add follow line into out controller to allow incoming post requests:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; skip_before_action :verify_authenticity_token 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once we have everything completed lets commit changes and push to heroku and test that incoming data are coming in to our URL. To do that let’s tail logs in heroku and send post url. We should be able to see that data are coming in.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Then lets tell to our bot where to send incoming requests. To do that we need to send follow get request:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; https://api.telegram.org/API_TOKEN/setWebhook&amp;amp;url=URL. 
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;API Token need to request from BotFather by asking /token.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Then let’s add bot in your Telegram and test out the message but tailing the logs in our beautiful heroku toolbelt. Now you should see incoming json coming from telegram.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Congratulations! Now we have bot and we have app which can receive messages  from the bot. In next chapter we will finish our beautiful bot by adding database tables with the best quotes to motivate everyone and ability to reply and even send quote of the day once a day to those who wants to subscribe.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Nov 2015 15:58:12 +0800</pubDate>
+        <link>http://vadimeremeev.github.io/heroku,/telegram/botapi,/rails/2015/11/21/create-telegram-bot-part-2.html</link>
+        <guid isPermaLink="true">http://vadimeremeev.github.io/heroku,/telegram/botapi,/rails/2015/11/21/create-telegram-bot-part-2.html</guid>
+        
+        
+        <category>heroku,</category>
+        
+        <category>telegram</category>
+        
+        <category>botapi,</category>
+        
+        <category>rails</category>
+        
+      </item>
+    
+      <item>
+        <title>Create Telegam Bot. Part 1.</title>
+        <description>&lt;p&gt;In this post I’ll show how to create new heroku app and link it with git repo hosted on github.&lt;/p&gt;
+
+&lt;p&gt;Let’s go!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lets create new folder and init new git repo there. Later we going to link it with github. Very recommend CLI tools Hub where you can manage you github repos from your command line. Then add README.md and push it to master. Now we have our code keep in safe place. Below is the commands&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; mkdir quote_of_the_day
+ cd quote_of_the_day
+ git init
+ hub create
+ touch README.md
+ git add .
+ git commit -am &quot;added readme&quot;
+ git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lets create new rails app which will be serving requests coming from telegram. Of course ruby should be already installed. I recommend to use rbenv. Then need to install rails gem.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; rails new .
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lets create new app in heroku. Heroku allow you to create free apps which can run within one process. It’s more than enought for first version before bring it to production. I highly recomment use CLI provided by Heroku where you can manage all your apps (they call it Heroku toolbelt).&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; heroku apps:create motivatedquoteoftheday
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;After you create the app heroku gives you link to git repo which will be the key to deploy apps into heroku. All you need to do is create another remote in your git repo the rest will be done by heroku once you push there your changes. Heroku can detect your app and build it and deploy just in few seconds.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; git remote add heroku https://git.heroku.com/motivatedquoteoftheday.git
+ git push heroku master
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;And you will see how the magical deployment happening. It’s just fantastic.&lt;/p&gt;
+
+    &lt;p&gt;The only thing you need to keep in mind that free version of Heroku support only postgres SQL.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now lets create new telegram bot.&lt;/p&gt;
+
+    &lt;p&gt;First you need to talk to botFather. He will guite you on how you going to create it. Once we have new bot created we need to link it with our brand new app.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How to do it I will explain you in next part.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Nov 2015 15:58:12 +0800</pubDate>
+        <link>http://vadimeremeev.github.io/heroku,/telegram/botapi,/rails/2015/11/14/create-telegram-bot.html</link>
+        <guid isPermaLink="true">http://vadimeremeev.github.io/heroku,/telegram/botapi,/rails/2015/11/14/create-telegram-bot.html</guid>
+        
+        
+        <category>heroku,</category>
+        
+        <category>telegram</category>
+        
+        <category>botapi,</category>
+        
+        <category>rails</category>
+        
+      </item>
     
       <item>
         <title>Aware where is your disk space</title>
         <description>&lt;p&gt;Beautiful tool which clearly shows which files eat your disk space.&lt;/p&gt;
 
-&lt;p&gt;http://www.derlien.com/&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.derlien.com/assets/main.jpg&quot; alt=&quot;Alt derlien&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.derlien.com/&quot;&gt;www.derlien.com&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Nov 2015 15:58:12 +0800</pubDate>
         <link>http://vadimeremeev.github.io/tools,/mac/2015/11/06/disk-tool.html</link>
@@ -30,11 +191,13 @@
         <title>Untypical guide to Ruby</title>
         <description>&lt;p&gt;Found pretty much interesting and untypical guide to Ruby.&lt;/p&gt;
 
-&lt;p&gt;http://poignant.guide/book/&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://poignant.guide/images/2006.cover.jpg&quot; alt=&quot;Alt cover&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://poignant.guide/book/&quot; title=&quot;book&quot;&gt;poignant.guide/book/&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 06 Nov 2015 15:58:12 +0800</pubDate>
-        <link>http://vadimeremeev.github.io/books/2015/11/06/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://vadimeremeev.github.io/books/2015/11/06/welcome-to-jekyll.html</guid>
+        <pubDate>Wed, 04 Nov 2015 15:58:12 +0800</pubDate>
+        <link>http://vadimeremeev.github.io/books/2015/11/04/untypical-ruby-guide.html</link>
+        <guid isPermaLink="true">http://vadimeremeev.github.io/books/2015/11/04/untypical-ruby-guide.html</guid>
         
         
         <category>books</category>

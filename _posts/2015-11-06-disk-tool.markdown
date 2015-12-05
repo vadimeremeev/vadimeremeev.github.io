@@ -7,4 +7,6 @@ categories: tools, mac
 
 Beautiful tool which clearly shows which files eat your disk space. 
 
-http://www.derlien.com/
+![Alt derlien](http://www.derlien.com/assets/main.jpg)
+
+[www.derlien.com](http://www.derlien.com/)
