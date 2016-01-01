@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Create Telegam bot. Part 3.</title>
-  <meta name="description" content="This is H1">
+  <meta name="description" content="In this chapter we will start build our Rails app by created data structure and response to telegram API.">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://vadimeremeev.github.io/heroku,/telegram/botapi,/rails/2015/12/05/create-telegram-bot-part3.html">
@@ -65,19 +65,19 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h1 id="this-is-h1">This is H1</h1>
+    <p>In this chapter we will start build our Rails app by created data structure and response to telegram API.</p>
 
-<blockquote>
-  <h2 id="this-is-h2">This is H2</h2>
-  <blockquote>
-    <p>Test
-Test</p>
-  </blockquote>
-
-</blockquote>
-
-<p><em>List of the data</em>
-        <code>here is the code</code></p>
+<ol>
+  <li>Let’s create new table quotes and quote_types.</li>
+  <li>Lets seed initial data there</li>
+  <li>Moving forward daily quotes will be taken from API</li>
+  <li>Create Telegram API library and initializer</li>
+  <li>Create Users table</li>
+  <li>Add REST Client library</li>
+  <li>Create callback from Telegram</li>
+  <li>Deploy code to heroku</li>
+  <li>Enjoy!</li>
+</ol>
 
   </div>
 
@@ -106,6 +106,17 @@ Test</p>
     </div>
 
   </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-8091296-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </footer>
 

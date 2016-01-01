@@ -5,25 +5,90 @@
     <description></description>
     <link>http://vadimeremeev.github.io/</link>
     <atom:link href="http://vadimeremeev.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Dec 2015 20:26:17 +0800</pubDate>
-    <lastBuildDate>Sat, 05 Dec 2015 20:26:17 +0800</lastBuildDate>
+    <pubDate>Fri, 01 Jan 2016 23:29:24 +0800</pubDate>
+    <lastBuildDate>Fri, 01 Jan 2016 23:29:24 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
+        <title>Good Regexp tutorial with the notes.</title>
+        <description>&lt;p&gt;Happy 2016 New Year to everyone! Start this year with basics everyone should know!&lt;/p&gt;
+
+&lt;p&gt;All the chapters you can read here: &lt;a href=&quot;http://regexone.com&quot; title=&quot;regexp notes&quot;&gt;http://regexone.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson Notes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    abc…    Letters
+    123…    Digits
+    \d	    Any Digit
+    \D	    Any Non-digit character
+    .	    Any Character
+    \.	    Period
+    [abc]   Only a, b, or c
+    [^abc]  Not a, b, nor c
+    [a-z]   Characters a to z
+    [0-9]   Numbers 0 to 9
+    \w	    Any Alphanumeric character
+    \W	    Any Non-alphanumeric character
+    {m}	m   Repetitions
+    {m,n}   m to n Repetitions
+    *	    Zero or more repetitions
+    +	    One or more repetitions
+    ?	    Optional character
+    \s	    Any Whitespace
+    \S	    Any Non-whitespace character
+    ^…$	    Starts and ends
+    (…)	    Capture Group
+    (a(bc)) Capture Sub-group
+    (.*)    Capture all
+    (abc|def)   Matches abc or def
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Fri, 01 Jan 2016 15:58:12 +0800</pubDate>
+        <link>http://vadimeremeev.github.io/regexp/2016/01/01/regexp-notes.html</link>
+        <guid isPermaLink="true">http://vadimeremeev.github.io/regexp/2016/01/01/regexp-notes.html</guid>
+        
+        
+        <category>regexp</category>
+        
+      </item>
+    
+      <item>
+        <title>Heroku infrastructure with 0 costs.</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;Free instance&lt;/li&gt;
+  &lt;li&gt;Heroku Belt (command line)&lt;/li&gt;
+  &lt;li&gt;Database manager. Valentina studio for PG databases&lt;/li&gt;
+  &lt;li&gt;Administrator panel&lt;/li&gt;
+  &lt;li&gt;Tips &amp;amp; Tricks&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sat, 26 Dec 2015 15:58:12 +0800</pubDate>
+        <link>http://vadimeremeev.github.io/heroku,/rails/2015/12/26/heroku-infrastructure.html</link>
+        <guid isPermaLink="true">http://vadimeremeev.github.io/heroku,/rails/2015/12/26/heroku-infrastructure.html</guid>
+        
+        
+        <category>heroku,</category>
+        
+        <category>rails</category>
+        
+      </item>
+    
+      <item>
         <title>Create Telegam bot. Part 3.</title>
-        <description>&lt;h1 id=&quot;this-is-h1&quot;&gt;This is H1&lt;/h1&gt;
+        <description>&lt;p&gt;In this chapter we will start build our Rails app by created data structure and response to telegram API.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;h2 id=&quot;this-is-h2&quot;&gt;This is H2&lt;/h2&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;Test
-Test&lt;/p&gt;
-  &lt;/blockquote&gt;
-
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;List of the data&lt;/em&gt;
-        &lt;code&gt;here is the code&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Let’s create new table quotes and quote_types.&lt;/li&gt;
+  &lt;li&gt;Lets seed initial data there&lt;/li&gt;
+  &lt;li&gt;Moving forward daily quotes will be taken from API&lt;/li&gt;
+  &lt;li&gt;Create Telegram API library and initializer&lt;/li&gt;
+  &lt;li&gt;Create Users table&lt;/li&gt;
+  &lt;li&gt;Add REST Client library&lt;/li&gt;
+  &lt;li&gt;Create callback from Telegram&lt;/li&gt;
+  &lt;li&gt;Deploy code to heroku&lt;/li&gt;
+  &lt;li&gt;Enjoy!&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Sat, 05 Dec 2015 15:58:12 +0800</pubDate>
         <link>http://vadimeremeev.github.io/heroku,/telegram/botapi,/rails/2015/12/05/create-telegram-bot-part3.html</link>
