@@ -5,9 +5,51 @@
     <description></description>
     <link>http://vadimeremeev.github.io/</link>
     <atom:link href="http://vadimeremeev.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Jan 2016 23:29:24 +0800</pubDate>
-    <lastBuildDate>Fri, 01 Jan 2016 23:29:24 +0800</lastBuildDate>
+    <pubDate>Sat, 02 Jan 2016 23:44:25 +0800</pubDate>
+    <lastBuildDate>Sat, 02 Jan 2016 23:44:25 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Add external libraries with the quotes and jokes to extend Telegram Bot.</title>
+        <description>&lt;p&gt;In this post we will extent our telegram bot with external API to get quote of the day, jokes and even russian quotes. After that our app will be ready to go live.&lt;/p&gt;
+
+&lt;p&gt;During my research I found few good free API where I can extract the quotes and send it to our users. Let me show it to you below:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.icndb.com/&quot; title=&quot;www.icndb.com&quot;&gt;www.icndb.com&lt;/a&gt;&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; Amazing database with Chuck Norris quotes. Their API allows to get random quote which is suiteable for me. 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.theysaidso.com,&quot; title=&quot;www.theysaidso.com&quot;&gt;www.theysaidso.com&lt;/a&gt;&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; This web-site provide paid and free API. For free version without registration we can only get quite of the day. Which is good for us. 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.forismatic.com&quot; title=&quot;forismatic.com&quot;&gt;www.forismatic.com&lt;/a&gt;&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; provide quotes on Russian language for russian users. 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Each library will be stored in separate file in /lib folder and will have it’s personal initializer.&lt;/p&gt;
+
+&lt;p&gt;To get access to the specific library quote we will add additional commands to our bot starting from /&lt;/p&gt;
+
+&lt;p&gt;By having that every day we can enjoy best quotes and jokes from all over the world!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jan 2016 15:58:12 +0800</pubDate>
+        <link>http://vadimeremeev.github.io/regexp/2016/01/01/final-telegram-bot-ready-for-use.html</link>
+        <guid isPermaLink="true">http://vadimeremeev.github.io/regexp/2016/01/01/final-telegram-bot-ready-for-use.html</guid>
+        
+        
+        <category>regexp</category>
+        
+      </item>
     
       <item>
         <title>Good Regexp tutorial with the notes.</title>
@@ -55,10 +97,12 @@
     
       <item>
         <title>Heroku infrastructure with 0 costs.</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Free instance&lt;/li&gt;
+        <description>&lt;p&gt;Below is the cool things you can get if using heroku for your web apps&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Free instance to deploy you first application&lt;/li&gt;
   &lt;li&gt;Heroku Belt (command line)&lt;/li&gt;
-  &lt;li&gt;Database manager. Valentina studio for PG databases&lt;/li&gt;
+  &lt;li&gt;Database server (only PG is free). Valentina studio for PG databases.&lt;/li&gt;
   &lt;li&gt;Administrator panel&lt;/li&gt;
   &lt;li&gt;Tips &amp;amp; Tricks&lt;/li&gt;
 &lt;/ol&gt;

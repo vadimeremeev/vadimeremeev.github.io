@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Heroku infrastructure with 0 costs.</title>
-  <meta name="description" content="Below is the cool things you can get if using heroku for your web apps">
+  <title>Add external libraries with the quotes and jokes to extend Telegram Bot.</title>
+  <meta name="description" content="In this post we will extent our telegram bot with external API to get quote of the day, jokes and even russian quotes. After that our app will be ready to go...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://vadimeremeev.github.io/heroku,/rails/2015/12/26/heroku-infrastructure.html">
+  <link rel="canonical" href="http://vadimeremeev.github.io/regexp/2016/01/01/final-telegram-bot-ready-for-use.html">
   <link rel="alternate" type="application/rss+xml" title="Personal blog" href="http://vadimeremeev.github.io/feed.xml">
 </head>
 
@@ -60,25 +60,46 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Heroku infrastructure with 0 costs.</h1>
-    <p class="post-meta"><time datetime="2015-12-26T15:58:12+08:00" itemprop="datePublished">Dec 26, 2015</time></p>
+    <h1 class="post-title" itemprop="name headline">Add external libraries with the quotes and jokes to extend Telegram Bot.</h1>
+    <p class="post-meta"><time datetime="2016-01-01T15:58:12+08:00" itemprop="datePublished">Jan 1, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Below is the cool things you can get if using heroku for your web apps</p>
+    <p>In this post we will extent our telegram bot with external API to get quote of the day, jokes and even russian quotes. After that our app will be ready to go live.</p>
+
+<p>During my research I found few good free API where I can extract the quotes and send it to our users. Let me show it to you below:</p>
 
 <ol>
-  <li>Free instance to deploy you first application</li>
-  <li>Heroku Belt (command line)</li>
-  <li>Database server (only PG is free). Valentina studio for PG databases.</li>
-  <li>Administrator panel</li>
-  <li>Tips &amp; Tricks</li>
+  <li>
+    <p><a href="http://www.icndb.com/" title="www.icndb.com">www.icndb.com</a></p>
+
+    <pre><code> Amazing database with Chuck Norris quotes. Their API allows to get random quote which is suiteable for me. 
+</code></pre>
+  </li>
+  <li>
+    <p><a href="http://www.theysaidso.com," title="www.theysaidso.com">www.theysaidso.com</a></p>
+
+    <pre><code> This web-site provide paid and free API. For free version without registration we can only get quite of the day. Which is good for us. 
+</code></pre>
+  </li>
+  <li>
+    <p><a href="http://www.forismatic.com" title="forismatic.com">www.forismatic.com</a></p>
+
+    <pre><code> provide quotes on Russian language for russian users. 
+</code></pre>
+  </li>
 </ol>
+
+<p>Each library will be stored in separate file in /lib folder and will have it’s personal initializer.</p>
+
+<p>To get access to the specific library quote we will add additional commands to our bot starting from /</p>
+
+<p>By having that every day we can enjoy best quotes and jokes from all over the world!</p>
 
   </div>
 
   <div class="post-categories" itemprop="articleBody">
-    heroku,rails
+    regexp
   </div>
 
 </article>
