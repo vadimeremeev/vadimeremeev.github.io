@@ -5,8 +5,8 @@
     <description></description>
     <link>http://vadimeremeev.github.io/</link>
     <atom:link href="http://vadimeremeev.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Jan 2016 23:44:25 +0800</pubDate>
-    <lastBuildDate>Sat, 02 Jan 2016 23:44:25 +0800</lastBuildDate>
+    <pubDate>Sun, 03 Jan 2016 00:34:10 +0800</pubDate>
+    <lastBuildDate>Sun, 03 Jan 2016 00:34:10 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -19,20 +19,17 @@
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://www.icndb.com/&quot; title=&quot;www.icndb.com&quot;&gt;www.icndb.com&lt;/a&gt;&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; Amazing database with Chuck Norris quotes. Their API allows to get random quote which is suiteable for me. 
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;Amazing database with Chuck Norris quotes. Their API allows to get random quote which is suiteable for me.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://www.theysaidso.com,&quot; title=&quot;www.theysaidso.com&quot;&gt;www.theysaidso.com&lt;/a&gt;&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; This web-site provide paid and free API. For free version without registration we can only get quite of the day. Which is good for us. 
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;This web-site provide paid and free API. For free version without registration we can only get quite of the day. Which is good for us.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://www.forismatic.com&quot; title=&quot;forismatic.com&quot;&gt;www.forismatic.com&lt;/a&gt;&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; provide quotes on Russian language for russian users. 
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;Provide quotes on Russian language for russian users.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -42,9 +39,9 @@
 
 &lt;p&gt;By having that every day we can enjoy best quotes and jokes from all over the world!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Jan 2016 15:58:12 +0800</pubDate>
-        <link>http://vadimeremeev.github.io/regexp/2016/01/01/final-telegram-bot-ready-for-use.html</link>
-        <guid isPermaLink="true">http://vadimeremeev.github.io/regexp/2016/01/01/final-telegram-bot-ready-for-use.html</guid>
+        <pubDate>Sat, 02 Jan 2016 15:58:12 +0800</pubDate>
+        <link>http://vadimeremeev.github.io/regexp/2016/01/02/final-telegram-bot-ready-for-use.html</link>
+        <guid isPermaLink="true">http://vadimeremeev.github.io/regexp/2016/01/02/final-telegram-bot-ready-for-use.html</guid>
         
         
         <category>regexp</category>

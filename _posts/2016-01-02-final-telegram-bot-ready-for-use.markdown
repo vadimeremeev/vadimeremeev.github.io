@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Add external libraries with the quotes and jokes to extend Telegram Bot."
-date:   2016-01-01 15:58:12 +0800
+date:   2016-01-02 15:58:12 +0800
 categories: regexp
 ---
 
@@ -11,13 +11,13 @@ During my research I found few good free API where I can extract the quotes and 
 
 1. [www.icndb.com](http://www.icndb.com/ "www.icndb.com")
 
-        Amazing database with Chuck Norris quotes. Their API allows to get random quote which is suiteable for me. 
+    Amazing database with Chuck Norris quotes. Their API allows to get random quote which is suiteable for me. 
 2. [www.theysaidso.com](http://www.theysaidso.com, "www.theysaidso.com")
 
-        This web-site provide paid and free API. For free version without registration we can only get quite of the day. Which is good for us. 
+    This web-site provide paid and free API. For free version without registration we can only get quite of the day. Which is good for us. 
 3. [www.forismatic.com](http://www.forismatic.com "forismatic.com")
 
-        provide quotes on Russian language for russian users. 
+    Provide quotes on Russian language for russian users. 
 
 Each library will be stored in separate file in /lib folder and will have it's personal initializer. 
 
